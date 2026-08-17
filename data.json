@@ -1,0 +1,224 @@
+[
+  {
+    "codigo": "AYE-825",
+    "guia": "T001-00001304",
+    "producto": "ZINC",
+    "programacion": "Grupo 1"
+  },
+  {
+    "codigo": "BJO-757",
+    "guia": "T001-00001305",
+    "producto": "COBRE",
+    "programacion": "Grupo 1"
+  },
+  {
+    "codigo": "BAX-933",
+    "guia": "T002-00000395",
+    "producto": "PLOMO",
+    "programacion": "Grupo 1"
+  },
+  {
+    "codigo": "AYW-871",
+    "guia": "T002-00000397",
+    "producto": "ZINC",
+    "programacion": "Grupo 1"
+  },
+  {
+    "codigo": "BYW-728",
+    "guia": "T001-00006087",
+    "producto": "PLOMO",
+    "programacion": "Grupo 1"
+  },
+  {
+    "codigo": "ANA-906",
+    "guia": "T001-00006089",
+    "producto": "PLOMO",
+    "programacion": "Grupo 1"
+  },
+  {
+    "codigo": "CES-940",
+    "guia": "T001-00006088",
+    "producto": "PLOMO",
+    "programacion": "Grupo 1"
+  },
+  {
+    "codigo": "CCB-731",
+    "guia": "EG07-00000187",
+    "producto": "COBRE",
+    "programacion": "Grupo 1"
+  },
+  {
+    "codigo": "BZP-734",
+    "guia": "EG07-00000188",
+    "producto": "COBRE",
+    "programacion": "Grupo 1"
+  },
+  {
+    "codigo": "BUN-892",
+    "guia": "T100-00020193",
+    "producto": "COBRE",
+    "programacion": "Grupo 1"
+  },
+  {
+    "codigo": "BWC-924",
+    "guia": "T100-00020192",
+    "producto": "COBRE",
+    "programacion": "Grupo 1"
+  },
+  {
+    "codigo": "ANX-776",
+    "guia": "T100-00020191",
+    "producto": "COBRE",
+    "programacion": "Grupo 1"
+  },
+  {
+    "codigo": "BRL-700",
+    "guia": "T100-00020195",
+    "producto": "COBRE",
+    "programacion": "Grupo 2"
+  },
+  {
+    "codigo": "BWW-946",
+    "guia": "T100-00020194",
+    "producto": "COBRE",
+    "programacion": "Grupo 2"
+  },
+  {
+    "codigo": "BUF-865",
+    "guia": "T100-00020199",
+    "producto": "COBRE",
+    "programacion": "Grupo 2"
+  },
+  {
+    "codigo": "BYR-876",
+    "guia": "T100-00020198",
+    "producto": "COBRE",
+    "programacion": "Grupo 2"
+  },
+  {
+    "codigo": "BYS-879",
+    "guia": "T100-00020197",
+    "producto": "COBRE",
+    "programacion": "Grupo 2"
+  },
+  {
+    "codigo": "BYS-880",
+    "guia": "T100-00020196",
+    "producto": "COBRE",
+    "programacion": "Grupo 2"
+  },
+  {
+    "codigo": "ANX-939",
+    "guia": "T100-00020200",
+    "producto": "COBRE",
+    "programacion": "Grupo 2"
+  },
+  {
+    "codigo": "BVC-858",
+    "guia": "T100-00020202",
+    "producto": "COBRE",
+    "programacion": "Grupo 2"
+  },
+  {
+    "codigo": "BSR-861",
+    "guia": "T100-00020201",
+    "producto": "COBRE",
+    "programacion": "Grupo 2"
+  },
+  {
+    "codigo": "ANX-931",
+    "guia": "T100-00020203",
+    "producto": "COBRE",
+    "programacion": "Grupo 2"
+  },
+  {
+    "codigo": "ANX-777",
+    "guia": "T100-00020205",
+    "producto": "COBRE",
+    "programacion": "Grupo 2"
+  },
+  {
+    "codigo": "ANX-818",
+    "guia": "T100-00020204",
+    "producto": "COBRE",
+    "programacion": "Grupo 2"
+  },
+  {
+    "codigo": "BWX-796",
+    "guia": "T100-00020206",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  },
+  {
+    "codigo": "BYR-847",
+    "guia": "T100-00020207",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  },
+  {
+    "codigo": "ATU-880",
+    "guia": "T100-00020210",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  },
+  {
+    "codigo": "CBA-745",
+    "guia": "T100-00020209",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  },
+  {
+    "codigo": "BSS-722",
+    "guia": "T100-00020208",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  },
+  {
+    "codigo": "BCC-926",
+    "guia": "T001-00001306",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  },
+  {
+    "codigo": "BLG-828",
+    "guia": "EG07-00001242",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  },
+  {
+    "codigo": "BMM-872",
+    "guia": "EG07-00001241",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  },
+  {
+    "codigo": "BUW-848",
+    "guia": "EG07-00001246",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  },
+  {
+    "codigo": "BMN-936",
+    "guia": "EG07-00001245",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  },
+  {
+    "codigo": "CEI-921",
+    "guia": "EG07-00001247",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  },
+  {
+    "codigo": "CHE-778",
+    "guia": "EG07-00000009",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  },
+  {
+    "codigo": "CKX-885",
+    "guia": "EG07-00000010",
+    "producto": "COBRE",
+    "programacion": "Grupo 3"
+  }
+]
