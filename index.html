@@ -23,7 +23,7 @@
 <body>
   <div class="card">
     <h2>Consulta de Ventanas de Atención</h2>
-    <label for="searchInput">Ingresa el código o placa a consultar:</label>
+    <label for="searchInput">Ingresa placa tracto a consultar:</label>
     <input type="text" id="searchInput" placeholder="Ej: AYE-825..." oninput="buscarDato()">
     
     <div id="result" class="result-box">
@@ -70,7 +70,7 @@
         resultBox.style.display = 'block';
       } else {
         resultContent.innerHTML = `
-          <div class="result-value" style="font-size: 0.95rem;">No se encontró información para este código.</div>
+          <div class="result-value" style="font-size: 0.95rem;">Consulte con el equipo de cochera sobre su atención.</div>
         `;
         resultBox.className = 'result-box not-found';
         resultBox.style.display = 'block';
