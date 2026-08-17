@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consulta de Programación</title>
+  <title>Consulta de Ventana Horaria</title>
   <style>
     * { box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
     body { background-color: #f8fafc; color: #1e293b; margin: 0; padding: 20px; display: flex; justify-content: center; min-height: 100vh; }
@@ -13,26 +13,28 @@
     input[type="text"] { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 1rem; outline: none; }
     input[type="text"]:focus { border-color: #2563eb; }
     .result-box { margin-top: 20px; padding: 16px; border-radius: 8px; background-color: #f1f5f9; border-left: 4px solid #2563eb; display: none; }
-    .result-title { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; margin-bottom: 4px; }
+    .detail-item { margin-bottom: 8px; }
+    .detail-item:last-child { margin-bottom: 0; }
+    .result-title { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; }
     .result-value { font-size: 1.125rem; font-weight: 600; color: #0f172a; }
     .not-found { color: #dc2626; border-left-color: #dc2626; background-color: #fef2f2; }
   </style>
 </head>
 <body>
   <div class="card">
-    <h2>Consulta de Programación</h2>
-    <label for="searchInput">Ingresa el código o dato a consultar:</label>
-    <input type="text" id="searchInput" placeholder="Ej: A-101..." oninput="buscarDato()">
+    <h2>Consulta de Ventanas de Atención</h2>
+    <label for="searchInput">Ingresa el código o placa a consultar:</label>
+    <input type="text" id="searchInput" placeholder="Ej: AYE-825..." oninput="buscarDato()">
     
     <div id="result" class="result-box">
-      <div class="result-title">Resultado / Programación:</div>
-      <div id="resultText" class="result-value"></div>
+      <div id="resultContent"></div>
     </div>
   </div>
 
   <script>
     let dataset = [];
 
+    // Cargar datos desde data.json
     fetch('data.json')
       .then(response => response.json())
       .then(data => { dataset = data; })
@@ -41,21 +43,35 @@
     function buscarDato() {
       const query = document.getElementById('searchInput').value.trim().toLowerCase();
       const resultBox = document.getElementById('result');
-      const resultText = document.getElementById('resultText');
+      const resultContent = document.getElementById('resultContent');
 
       if (query === '') {
         resultBox.style.display = 'none';
         return;
       }
 
-      const item = dataset.find(row => row.codigo && row.codigo.toString().toLowerCase() === query);
+      // Buscar coincidencia en la clave CODIGO
+      const item = dataset.find(row => 
+        row.CODIGO && row.CODIGO.toLowerCase().includes(query)
+      );
 
       if (item) {
-        resultText.textContent = item.programacion;
+        resultContent.innerHTML = `
+          <div class="detail-item">
+            <div class="result-title">Código / Placa:</div>
+            <div class="result-value">${item.CODIGO}</div>
+          </div>
+          <div class="detail-item" style="margin-top: 10px;">
+            <div class="result-title">Ventana Horaria Asignada:</div>
+            <div class="result-value" style="color: #2563eb;">${item.VENTANA_HORARIA}</div>
+          </div>
+        `;
         resultBox.className = 'result-box';
         resultBox.style.display = 'block';
       } else {
-        resultText.textContent = 'No se encontró información para este código.';
+        resultContent.innerHTML = `
+          <div class="result-value" style="font-size: 0.95rem;">No se encontró información para este código.</div>
+        `;
         resultBox.className = 'result-box not-found';
         resultBox.style.display = 'block';
       }
